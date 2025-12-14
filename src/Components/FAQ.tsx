@@ -1,4 +1,3 @@
-import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/Components/ui/accordion";
 import { motion } from 'framer-motion';
 import FAQs from '../assets/faqs.svg';

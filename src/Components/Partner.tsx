@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Hammer, Users, PackageCheck, Globe } from 'lucide-react';
 
 export default function VishwaplyStats() {
@@ -25,7 +25,7 @@ export default function VishwaplyStats() {
     const timer = setInterval(() => {
       step++;
       const progress = step / steps;
-      
+
       setCounts({
         clients: Math.floor(finalCounts.clients * progress),
         people: Math.floor(finalCounts.people * progress),
@@ -99,7 +99,7 @@ export default function VishwaplyStats() {
                 <div className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 overflow-hidden">
                   {/* Background Gradient Effect */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${stat.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                  
+
                   {/* Content */}
                   <div className="relative z-10 flex items-center gap-5">
                     {/* Icon Section */}

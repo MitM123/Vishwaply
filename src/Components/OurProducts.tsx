@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Package, Palette, Settings, DoorOpen, Home, Hammer } from "lucide-react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
