@@ -6,6 +6,7 @@ import Company from "@/Components/Company";
 import OurProducts from "@/Components/OurProducts";
 import Footer from "@/Components/Footer";
 import FAQ from "@/Components/FAQ";
+import CTASection from "@/Components/CTASection";
 
 const Home = () => {
   const containerVariants: any = {
@@ -134,6 +135,9 @@ const Home = () => {
       </div>
       <div>
         <OurProducts />
+      </div>
+      <div>
+        <CTASection />
       </div>
       <div>
         <FAQ />

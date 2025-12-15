@@ -18,12 +18,12 @@ const Navbar = () => {
         {
             name: "OUR PROJECTS",
             scrollTo: "pricing",
-            path: "/"
+            path: "/ourprojects"
         },
         {
             name: "ABOUT US",
             scrollTo: "faqs",
-            path: "/"
+            path: "/aboutus"
         }
     ]
 
@@ -81,10 +81,12 @@ const Navbar = () => {
                     <div className={`hidden md:flex justify-center items-center gap-10`}>
                         {
                             links.map((link) => (
-                                <Button key={link.name} className={"text-gray-700 hover:cursor-pointer font-bold hover:bg-transparent transition-colors bg-transparent text-md "}
-                                >
-                                    {link.name}
-                                </Button>
+                                <Link to={link.path} key={link.name}>
+                                    <Button key={link.name} className={"text-gray-700 hover:cursor-pointer font-bold hover:bg-transparent transition-colors bg-transparent text-md "}
+                                    >
+                                        {link.name}
+                                    </Button>
+                                </Link>
                             ))
                         }
                     </div>
@@ -107,12 +109,12 @@ const Navbar = () => {
 
                     <div className="hidden md:flex font-manrope items-center gap-6">
                         <Link
-                            to="/register"
+                            to="/contactus"
                             className="px-5 py-3 w-34 font-bold text-sm flex items-center justify-center
 bg-gradient-to-r from-[#182f4f] to-[#2f578c]
   text-white rounded-lg hover:opacity-90 transition-opacity"
                         >
-                           CONTACT US
+                            CONTACT US
                         </Link>
                     </div>
                 </nav>

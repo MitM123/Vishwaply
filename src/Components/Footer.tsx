@@ -2,145 +2,118 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-secondary text-white">
+        <footer className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-slate-800 font-secondary">
             {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div className="max-w-6xl mx-auto px-6 py-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-6">
 
                     {/* Company Info */}
-                    <div className="space-y-4">
-                        <h3 className="text-2xl font-bold text-white mb-4">
-                            Hardware Store
-                        </h3>
-                        <p className="text-gray-300 leading-relaxed">
-                            Your trusted partner for premium plywood, hardware, and construction materials since 1995.
+                    <div className="lg:col-span-5 space-y-4 text-center lg:text-left">
+                        <div className="flex items-center gap-2 justify-center lg:justify-start">
+                            <div className="bg-indigo-600 p-1 rounded">
+                                <div className="w-4 h-4 bg-white rounded-sm"></div>
+                            </div>
+                            <h3 className="text-lg font-bold text-slate-900">
+                                Vishwa Ply & Hardware
+                            </h3>
+                        </div>
+                        <p className="text-slate-600 leading-relaxed text-sm max-w-md mx-auto lg:mx-0">
+                            Your trusted partner for premium plywood, hardware, and construction materials since 2023.
                         </p>
-                        <div className="flex gap-4 pt-4">
-                            <a href="#" className="bg-white/10 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
-                                <Facebook className="h-5 w-5" />
-                            </a>
-                            <a href="#" className="bg-white/10 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
-                                <Twitter className="h-5 w-5" />
-                            </a>
-                            <a href="#" className="bg-white/10 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
-                                <Instagram className="h-5 w-5" />
-                            </a>
-                            <a href="#" className="bg-white/10 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
-                                <Linkedin className="h-5 w-5" />
-                            </a>
+                    </div>
+
+                    {/* Newsletter */}
+                    <div className="lg:col-span-6 text-center lg:text-left">
+                        <h4 className="text-base font-medium mb-4 text-slate-900">
+                            Sign up for our newsletter
+                        </h4>
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 max-w-lg mx-auto lg:mx-0 lg:ml-auto">
+                            <input
+                                type="email"
+                                placeholder="Your email address"
+                                className="w-full px-4 py-2.5 bg-white/50 border-b-2 border-slate-300 focus:outline-none focus:border-indigo-600 text-sm placeholder-slate-400"
+                            />
+                            <button className="w-full sm:w-auto px-6 py-2.5 bg-slate-900 text-white font-medium text-sm hover:bg-slate-800 transition-colors">
+                                Submit
+                            </button>
                         </div>
                     </div>
+                </div>
+
+                {/* Links Section */}
+                <div className="flex flex-col sm:flex-row gap-10 lg:gap-16 justify-center lg:justify-end mt-10 pt-10 border-t border-slate-200 text-center lg:text-left">
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
-                        <ul className="space-y-3">
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Contact
-                                </a>
-                            </li>
+                        <h4 className="text-sm font-semibold mb-4 text-slate-900">Quick Links</h4>
+                        <ul className="space-y-2">
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">Home</a></li>
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">Our Projects</a></li>
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">About Us</a></li>
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">Contact</a></li>
                         </ul>
                     </div>
 
-                    {/* Product Categories */}
+                    {/* Help */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4 text-white">Categories</h4>
-                        <ul className="space-y-3">
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Plywood & Boards
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Laminates
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Modular Hardware
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Door Hardware
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    Kitchen Solutions
-                                </a>
-                            </li>
+                        <h4 className="text-sm font-semibold mb-4 text-slate-900">Help</h4>
+                        <ul className="space-y-2">
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">Privacy Policy</a></li>
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">Terms of Service</a></li>
+                            <li><a href="#" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">Cookie Policy</a></li>
                         </ul>
                     </div>
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4 text-white">Contact Us</h4>
-                        <ul className="space-y-4">
-                            <li className="flex items-start gap-3">
-                                <MapPin className="h-5 w-5 text-indigo-400 mt-1 flex-shrink-0" />
-                                <span className="text-gray-300">
-                                    123 Hardware Street, Bharuch, Gujarat, India
+                        <h4 className="text-sm font-semibold mb-4 text-slate-900">Contact Us</h4>
+                        <div className="space-y-3">
+                            <div className="flex items-start gap-2 justify-center lg:justify-start">
+                                <MapPin className="h-4 w-4 text-indigo-600 mt-0.5 flex-shrink-0" />
+                                <span className="text-slate-600 text-sm leading-relaxed">
+                                    17,18,19, First floor, Snehsagar Soc,<br />
+                                    Abrama Rd, opp. Sanskartirth School,<br />
+                                    Mota Varachha, Surat, Gujarat 394101
                                 </span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Phone className="h-5 w-5 text-indigo-400 flex-shrink-0" />
-                                <a href="tel:+919876543210" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    +91 98765 43210
+                            </div>
+                            <div className="flex items-center gap-2 justify-center lg:justify-start">
+                                <Phone className="h-4 w-4 text-indigo-600 flex-shrink-0" />
+                                <a href="tel:+919527351890" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">
+                                    +91 95273 51890
                                 </a>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Mail className="h-5 w-5 text-indigo-400 flex-shrink-0" />
-                                <a href="mailto:info@hardwarestore.com" className="text-gray-300 hover:text-indigo-400 transition-colors duration-300">
-                                    info@hardwarestore.com
+                            </div>
+                            <div className="flex items-center gap-2 justify-center lg:justify-start">
+                                <Mail className="h-4 w-4 text-indigo-600 flex-shrink-0" />
+                                <a href="mailto:vishwaplyandhardware5671@gmail.com" className="text-slate-600 hover:text-indigo-600 transition-colors text-sm">
+                                    vishwaplyandhardware5671@gmail.com
                                 </a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Social Media */}
+                <div className="mt-8 pt-6 border-t border-slate-200">
+                    <div className="flex gap-3 justify-center lg:justify-start">
+                        {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
+                            <a
+                                key={index}
+                                href="#"
+                                className="bg-white/60 hover:bg-indigo-600 hover:text-white p-2 rounded-full transition-all duration-300 text-slate-700"
+                            >
+                                <Icon className="h-4 w-4" />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>
 
-            {/* Bottom Bar */}
-            <div className="border-t border-gray-700">
-                <div className="max-w-7xl mx-auto px-4 py-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-gray-400 text-sm text-center md:text-left">
-                            © 2024 Hardware Store. All rights reserved.
-                        </p>
-                        <div className="flex gap-6 text-sm">
-                            <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors duration-300">
-                                Privacy Policy
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors duration-300">
-                                Terms of Service
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors duration-300">
-                                Cookie Policy
-                            </a>
-                        </div>
-                    </div>
+            {/* Bottom Copyright */}
+            <div className="border-t border-slate-200 bg-white/40">
+                <div className="max-w-6xl mx-auto px-6 py-4">
+                    <p className="text-slate-600 text-xs text-center">
+                        © 2024 Vishwa Ply & Hardware. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
