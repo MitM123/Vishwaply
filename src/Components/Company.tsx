@@ -82,7 +82,7 @@ const CompanyCard = ({
 
 const Company = () => {
     return (
-        <div className="relative font-secondary flex w-full flex-col items-center  justify-center overflow-hidden bg-gray-50 dark:bg-gray-950 py-16">
+        <div className="relative font-secondary flex w-full flex-col items-center  justify-center overflow-hidden bg-[#FAF9F6] dark:bg-gray-950 py-16">
             <div className="mb-4 text-center px-4 ">
               
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-3">
@@ -106,8 +106,8 @@ const Company = () => {
                 </Marquee>
                 
                 {/* Gradient fade on edges */}
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-gray-50 dark:from-gray-950 to-transparent"></div>
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-gray-50 dark:from-gray-950 to-transparent"></div>
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent"></div>
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent"></div>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ const content : any = [
         description: (
             <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 p-3 shadow-lg">
+                    <div className="rounded-xl bg-gradient-to-br from-[#C19A6B] to-[#8B4513] p-3 shadow-lg">
                         <Package className="h-8 w-8 text-white" strokeWidth={2} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Plywood & Boards</h3>
@@ -43,14 +43,14 @@ const content : any = [
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-indigo-600 font-semibold">Strong. Durable. Tested for Indian Conditions.</p>
+                    <p className="text-base text-[#8B5E3C] font-semibold">Strong. Durable. Tested for Indian Conditions.</p>
                 </div>
             </div>
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                    src="https://images.unsplash.com/photo-1614267118556-5c1c999f0f0b?w=800&q=80"
+                    src="https://images.unsplash.com/photo-1554230253-017daba2b631?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Plywood & Boards"
                     className="h-full w-full object-cover"
                 />
@@ -62,7 +62,7 @@ const content : any = [
         description: (
             <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 p-3 shadow-lg">
+                    <div className="rounded-xl bg-gradient-to-br from-[#8B5E3C] to-[#5D4037] p-3 shadow-lg">
                         <Palette className="h-8 w-8 text-white" strokeWidth={2} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Laminates & Surfaces</h3>
@@ -97,7 +97,7 @@ const content : any = [
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-indigo-600 font-semibold">Premium finishes that elevate interiors.</p>
+                    <p className="text-base text-[#8B5E3C] font-semibold">Premium finishes that elevate interiors.</p>
                 </div>
             </div>
         ),
@@ -116,7 +116,7 @@ const content : any = [
         description: (
             <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 p-3 shadow-lg">
+                    <div className="rounded-xl bg-gradient-to-br from-[#A67B5B] to-[#8B5E3C] p-3 shadow-lg">
                         <Settings className="h-8 w-8 text-white" strokeWidth={2} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Modular Hardware</h3>
@@ -206,7 +206,7 @@ const content : any = [
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-indigo-600 font-semibold">Security with style for modern spaces.</p>
+                    <p className="text-base text-[#8B5E3C] font-semibold">Security with style for modern spaces.</p>
                 </div>
             </div>
         ),
@@ -225,7 +225,7 @@ const content : any = [
         description: (
             <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 p-3 shadow-lg">
+                    <div className="rounded-xl bg-gradient-to-br from-[#5D4037] to-[#8B5E3C] p-3 shadow-lg">
                         <Home className="h-8 w-8 text-white" strokeWidth={2} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Kitchen & Wardrobe</h3>
@@ -260,7 +260,7 @@ const content : any = [
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-indigo-600 font-semibold">Smart storage. Smooth living.</p>
+                    <p className="text-base text-[#8B5E3C] font-semibold">Smart storage. Smooth living.</p>
                 </div>
             </div>
         ),
@@ -279,7 +279,7 @@ const content : any = [
         description: (
             <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 p-3 shadow-lg">
+                    <div className="rounded-xl bg-gradient-to-br from-[#D4B483] to-[#A67B5B] p-3 shadow-lg">
                         <Hammer className="h-8 w-8 text-white" strokeWidth={2} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Adhesives & Accessories</h3>
@@ -314,7 +314,7 @@ const content : any = [
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-indigo-600 font-semibold">The finishing touch that holds everything together.</p>
+                    <p className="text-base text-[#8B5E3C] font-semibold">The finishing touch that holds everything together.</p>
                 </div>
             </div>
         ),
@@ -332,9 +332,9 @@ const content : any = [
 
 const OurProducts = () => {
     return (
-        <div className="w-full py-20 font-secondary ">
+        <div className="w-full py-20 font-secondary bg-[#FAF9F6]">
             <div className="max-w-7xl mx-auto px-4 mb-16">
-                <p className="text-sm font-semibold text-indigo-600 uppercase tracking-wide mb-3 text-center">
+                <p className="text-sm font-semibold text-[#8B5E3C] uppercase tracking-wide mb-3 text-center">
                     Our Products
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">

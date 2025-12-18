@@ -80,24 +80,24 @@ const Home = () => {
           animate="visible"
         >
           {/* Badge */}
-          <motion.div variants={badgeVariants} className="mb-3">
+          {/* <motion.div variants={badgeVariants} className="mb-3">
             <span className="inline-block px-5 py-2 font-Cinzel rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-sm font-semibold tracking-wider shadow-lg">
               Your Trust is Our Success
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Title */}
           <motion.h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white font-Cabin text-center mb-8 leading-tight tracking-tight">
 
             <motion.div variants={wordVariants} custom={0} className="mb-3">
-              <span className="bg-gradient-to-r from-sky-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent font-extrabold">
+              <span className="bg-gradient-to-r from-[#E6C9A8] via-[#F5E6D3] to-[#D4B483] bg-clip-text text-transparent font-extrabold">
                 Strength
               </span>
               <span className="text-gray-100"> You Can Trust.</span>
             </motion.div>
 
             <motion.div variants={wordVariants} custom={1}>
-              <span className="bg-gradient-to-r from-indigo-400 via-blue-400 to-sky-300 bg-clip-text text-transparent font-extrabold">
+              <span className="bg-gradient-to-r from-[#D4B483] via-[#F5E6D3] to-[#E6C9A8] bg-clip-text text-transparent font-extrabold">
                 Quality
               </span>
               <span className="text-gray-100"> You Can Feel.</span>
@@ -118,8 +118,8 @@ const Home = () => {
             <Link
               to="/register"
               className="px-5 py-3 w-48 font-bold text-md flex items-center justify-center 
-            bg-gradient-to-r from-[#182f4f] to-[#2f578c] 
-            text-white rounded-lg hover:opacity-90 transition-opacity"
+            bg-gradient-to-r from-[#8B5E3C] to-[#5D4037] 
+            text-white rounded-full hover:opacity-90 transition-opacity"
             >
               Get Quotes
             </Link>
