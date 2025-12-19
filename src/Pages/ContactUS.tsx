@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ const ContactUs = () => {
     message: ''
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -38,7 +38,7 @@ const ContactUs = () => {
       {/* Hero Section */}
       <div className="py-24 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto text-center">
-          <motion.p 
+          <motion.p
             className="text-[#E6C9A8] text-lg font-medium mb-4 tracking-wider"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -46,8 +46,8 @@ const ContactUs = () => {
           >
             GET IN TOUCH
           </motion.p>
-          
-          <motion.h1 
+
+          <motion.h1
             className="text-6xl lg:text-7xl font-bold text-[#2C2C2C] leading-tight mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,8 +57,8 @@ const ContactUs = () => {
             <br />
             <span className="text-[#E6C9A8]">Dream Space</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,12 +69,12 @@ const ContactUs = () => {
         </div>
       </div>
 
-     
+
       {/* Map and Form Section */}
       <div className="py-16 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
+
             {/* Left Side - Map */}
             <motion.div
               className="h-[600px] bg-gray-200"
