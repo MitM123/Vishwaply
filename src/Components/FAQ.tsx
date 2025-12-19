@@ -1,8 +1,11 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/Components/ui/accordion";
-import { motion } from 'framer-motion';
-import FAQs from '../assets/faqs.svg';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const FAQ = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
   const faqs = [
     { question: "Why should I choose Vishwaplyandhardware?", answer: "Because we focus on quality, authenticity, and expert guidance. We don't just sell products—we help you choose the right materials that last longer and perform better." },
     { question: "What makes Vishwaplyandhardware different from others?", answer: "Our biggest difference is trusted brands, complete product range, and honest advice. Customers rely on us for genuine products, fair pricing, and long-term reliability." },
@@ -13,47 +16,63 @@ const FAQ = () => {
   ];
 
   return (
-    <>
-      {/* <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-8 h-8 md:w-16 md:h-16 border-2 border-blue-400 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-16 left-1/4 w-12 h-12 md:w-24 md:h-24 border-2 border-indigo-500 rounded-full animate-bounce"></div>
-        <div className="absolute top-40 right-20 w-8 h-8 md:w-16 md:h-16 border-2 border-blue-300 rounded-full animate-ping"></div>
-      </div> */}
-      <div className="container mx-auto font-secondary px-4 relative">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mt-10 mb-10 md:mb-20"
-        >
-          <h1 className="inline-block text-4xl md:text-5xl font-dm-sans font-bold text-slate-800 mb-4 md:mb-6 relative">
-            FAQs
-            <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500/0 via-indigo-500/50 to-blue-500/0"></div>
-          </h1>
-          <div className="flex flex-col-reverse md:flex-row w-full">
-            <div className="font-dm-sans w-full md:w-[60%] mx-auto space-y-4 p-4 md:p-7">
-                {faqs.map((faq, index) => (
-              <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem key={index} value={`item-${index}`} className="border-b mb-4 border-orange-200/50">
+    <div ref={ref} className="bg-[#FAF9F6] font-secondary py-20 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
+        
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24">
+          
+          {/* Left Title */}
+          <div className="lg:w-1/3 sticky top-24">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">Common Questions</span>
+              <div className="h-[1px] w-12 bg-gray-400"></div>
+            </div>
+            <motion.h2 
+              className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.8 }}
+            >
+              Frequently<br />Asked.
+            </motion.h2>
+            <motion.p
+              className="text-lg text-gray-600 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Everything you need to know about our products and services.
+            </motion.p>
+          </div>
+
+          {/* Right FAQ List */}
+          <div className="lg:w-2/3 w-full">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {faqs.map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
+                >
+                  <AccordionItem value={`item-${index}`} className="border-b border-gray-200 px-0">
                     <AccordionTrigger
-                      className="text-left py-4 px-4 md:px-6 bg-orange-50/50 hover:bg-orange-100/70 rounded-2xl data-[state=open]:rounded-b-none hover:no-underline transition-all duration-200"
+                      className="text-left py-6 text-xl font-medium text-gray-900 hover:text-gray-600 hover:no-underline transition-colors"
                     >
-                      <span className="text-base md:text-lg font-semibold text-slate-800">{faq.question}</span>
+                      {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="p-4 md:p-6 text-start bg-orange-50/30 rounded-b-2xl">
-                      <p className="text-slate-700">{faq.answer}</p>
+                    <AccordionContent className="pb-6 text-lg text-gray-600 leading-relaxed font-light">
+                      {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-              </Accordion>
-                ))}
-            </div>
-            <div className="w-full md:w-[40%] flex justify-center p-5">
-              <img src={FAQs} alt="FAQs" className="w-full h-auto" />
-            </div>
+                </motion.div>
+              ))}
+            </Accordion>
           </div>
-        </motion.div>
+
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

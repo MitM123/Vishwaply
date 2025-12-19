@@ -7,7 +7,7 @@ const CTASection = () => {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <img
-                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
+                            src="https://plus.unsplash.com/premium_photo-1664301231899-5a7b1a621238?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Interior Design"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />

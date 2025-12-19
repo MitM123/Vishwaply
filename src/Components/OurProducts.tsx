@@ -5,39 +5,39 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 const content : any = [
     {
         title: "Plywood & Boards",
+        icon: <Package className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-[#C19A6B] to-[#8B4513] p-3 shadow-lg">
-                        <Package className="h-8 w-8 text-white" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Plywood & Boards</h3>
-                </div>
-                
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Premium quality plywood, boards, and flush doors engineered for durability and strength in Indian conditions.
                 </p>
                 
-                <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Commercial Plywood</p>
+                <div className="space-y-4">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Commercial Plywood</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">BWP/Marine Plywood</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">BWP/Marine Plywood</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">MR Grade Plywood</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">MR Grade Plywood</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Block Board</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Block Board</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Flush Doors</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Flush Doors</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">MDF & HDHMR</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">MDF & HDHMR</p>
                         </div>
                     </div>
                 </div>
@@ -59,45 +59,45 @@ const content : any = [
     },
     {
         title: "Laminates & Surface Solutions",
+        icon: <Palette className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-[#8B5E3C] to-[#5D4037] p-3 shadow-lg">
-                        <Palette className="h-8 w-8 text-white" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Laminates & Surfaces</h3>
-                </div>
-                
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Premium decorative laminates and surface finishes that transform interiors with elegance and style.
                 </p>
                 
-                <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Decorative Laminates</p>
+                <div className="space-y-4">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                         <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Decorative Laminates</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">High Gloss Finish</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">High Gloss Finish</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Matte Finish</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Matte Finish</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Textured Finish</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Textured Finish</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Acrylic Sheets</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Acrylic Sheets</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">PVC Laminates</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">PVC Laminates</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-[#8B5E3C] font-semibold">Premium finishes that elevate interiors.</p>
+                <div className="pt-4 border-t border-slate-100">
+                    <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">Premium finishes that elevate interiors.</p>
                 </div>
             </div>
         ),
@@ -113,46 +113,46 @@ const content : any = [
     },
     {
         title: "Modular Hardware",
+        icon: <Settings className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-[#A67B5B] to-[#8B5E3C] p-3 shadow-lg">
-                        <Settings className="h-8 w-8 text-white" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Modular Hardware</h3>
-                </div>
-                
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Premium fittings from Hettich, Blum, Häfele, Ebco & Enox - trusted by architects and carpenters nationwide.
                 </p>
                 
-                <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Soft Close Hinges</p>
+                <div className="space-y-4">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Soft Close Hinges</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Drawer Channels</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Drawer Channels</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Hydraulic Fittings</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Hydraulic Fittings</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Lift-Up Systems</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Lift-Up Systems</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Wardrobe Accessories</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Wardrobe Accessories</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Kitchen Baskets</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Kitchen Baskets</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200 space-y-2">
-                    <p className="text-sm text-gray-600 font-semibold uppercase tracking-wide">Trusted Brands</p>
-                    <p className="text-base text-gray-900 font-medium">Hettich • Blum • Häfele • Ebco • Enox</p>
+                <div className="pt-4 border-t border-slate-100 space-y-2">
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Trusted Brands</p>
+                    <p className="text-base text-slate-900 font-medium">Hettich • Blum • Häfele • Ebco • Enox</p>
                 </div>
             </div>
         ),
@@ -168,45 +168,45 @@ const content : any = [
     },
     {
         title: "Door & Furniture Hardware",
+        icon: <DoorOpen className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 p-3 shadow-lg">
-                        <DoorOpen className="h-8 w-8 text-white" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Door & Furniture Hardware</h3>
-                </div>
-                
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     High-quality locks, handles, and door fittings combining security with contemporary design aesthetics.
                 </p>
                 
-                <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Door Locks</p>
+                <div className="space-y-4">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                         <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Door Locks</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Handles & Knobs</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Handles & Knobs</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Tower Bolts</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Tower Bolts</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Aldrops</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Aldrops</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Door Closers</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Door Closers</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Mortise Locks</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Mortise Locks</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-[#8B5E3C] font-semibold">Security with style for modern spaces.</p>
+                <div className="pt-4 border-t border-slate-100">
+                    <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">Security with style for modern spaces.</p>
                 </div>
             </div>
         ),
@@ -222,45 +222,45 @@ const content : any = [
     },
     {
         title: "Kitchen & Wardrobe Solutions",
+        icon: <Home className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-[#5D4037] to-[#8B5E3C] p-3 shadow-lg">
-                        <Home className="h-8 w-8 text-white" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Kitchen & Wardrobe</h3>
-                </div>
-                
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Smart modular storage systems and premium accessories for organized, functional living spaces.
                 </p>
                 
-                <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Kitchen Accessories</p>
+                <div className="space-y-4">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Kitchen Accessories</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Cutlery Trays</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Cutlery Trays</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Corner Units</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Corner Units</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Pantry Units</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Pantry Units</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Wardrobe Storage</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Wardrobe Storage</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Organizers</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Organizers</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-[#8B5E3C] font-semibold">Smart storage. Smooth living.</p>
+                <div className="pt-4 border-t border-slate-100">
+                    <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">Smart storage. Smooth living.</p>
                 </div>
             </div>
         ),
@@ -276,45 +276,45 @@ const content : any = [
     },
     {
         title: "Adhesives & Accessories",
+        icon: <Hammer className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-xl bg-gradient-to-br from-[#D4B483] to-[#A67B5B] p-3 shadow-lg">
-                        <Hammer className="h-8 w-8 text-white" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Adhesives & Accessories</h3>
-                </div>
-                
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Quality adhesives, fasteners, and finishing materials that hold your projects together perfectly.
                 </p>
                 
-                <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Fevicol Adhesives</p>
+                <div className="space-y-4">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                         <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Fevicol Adhesives</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Wood Glue</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Wood Glue</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Screws & Fasteners</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Screws & Fasteners</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Nails & Fittings</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Nails & Fittings</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Edge Bands</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Edge Bands</p>
                         </div>
-                        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-white hover:shadow-md transition-all">
-                            <p className="text-sm text-gray-800 font-medium">Tapes & Tools</p>
+                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
+                            <p className="text-base font-medium">Tapes & Tools</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-[#8B5E3C] font-semibold">The finishing touch that holds everything together.</p>
+                <div className="pt-4 border-t border-slate-100">
+                    <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">The finishing touch that holds everything together.</p>
                 </div>
             </div>
         ),
@@ -332,8 +332,8 @@ const content : any = [
 
 const OurProducts = () => {
     return (
-        <div className="w-full py-20 font-secondary bg-[#FAF9F6]">
-            <div className="max-w-7xl mx-auto px-4 mb-16">
+        <div className="w-full pb-20 font-secondary bg-[#FAF9F6]">
+            <div className="max-w-7xl mx-auto px-4 pt-20 mb-10">
                 <p className="text-sm font-semibold text-[#8B5E3C] uppercase tracking-wide mb-3 text-center">
                     Our Products
                 </p>

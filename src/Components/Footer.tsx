@@ -88,9 +88,9 @@ const Footer = () => {
 
 
             {/* Bottom Copyright */}
-            <div className="border-t border-slate-200 bg-white/40">
-                <div className="max-w-6xl mx-auto px-6 py-4">
-                    <p className="text-slate-600 text-xs text-center">
+            <div className="border-t border-slate-200">
+                <div className="max-w-6xl mx-auto px-6 py-6">
+                    <p className="text-slate-600 text-sm text-center font-medium">
                         © 2024 Vishwa Ply & Hardware. All rights reserved.
                     </p>
                 </div>

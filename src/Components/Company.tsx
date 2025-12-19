@@ -82,7 +82,7 @@ const CompanyCard = ({
 
 const Company = () => {
     return (
-        <div className="relative font-secondary flex w-full flex-col items-center  justify-center overflow-hidden bg-[#FAF9F6] dark:bg-gray-950 py-16">
+        <div className="relative font-secondary flex w-full flex-col items-center  justify-center overflow-hidden bg-[#FAF9F6] dark:bg-gray-950 py-28">
             <div className="mb-4 text-center px-4 ">
               
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-3">
