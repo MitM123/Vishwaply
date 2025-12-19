@@ -26,7 +26,6 @@ export default function Partner() {
   return (
     <div ref={ref} className="bg-[#FAF9F6] font-secondary py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24 mb-24">
           

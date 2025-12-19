@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/Components/ui/button';
 import { motion, AnimatePresence } from "framer-motion";
 import logo from '../assets/logo.png';
 
