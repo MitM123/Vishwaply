@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
       <div className="relative w-full h-screen font-secondary overflow-hidden">
-        
+
         {/* Background Image with Brown Tint Overlay */}
         <div className="absolute inset-0 w-full h-full">
           <img
@@ -50,7 +50,7 @@ const Home = () => {
 
         {/* Content Overlay */}
         <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-24">
-          <motion.div 
+          <motion.div
             className="max-w-4xl z-10 mt-20"
             initial="hidden"
             animate="visible"
