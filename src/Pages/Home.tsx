@@ -7,6 +7,7 @@ import OurProducts from "@/Components/OurProducts";
 import Footer from "@/Components/Footer";
 import FAQ from "@/Components/FAQ";
 import CTASection from "@/Components/CTASection";
+import CustomerReviews from "@/Components/CustomerReviews";
 
 const Home = () => {
   const containerVariants: any = {
@@ -77,7 +78,7 @@ const Home = () => {
 
             <motion.div variants={itemVariants}>
               <Link
-                to="/register"
+                to="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-[#8B5E3C] rounded-full hover:bg-[#6D4C3D] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
               >
                 Get Quotes
@@ -101,6 +102,9 @@ const Home = () => {
       </div>
       <div>
         <CTASection />
+      </div>
+      <div>
+        <CustomerReviews />
       </div>
       <div>
         <FAQ />

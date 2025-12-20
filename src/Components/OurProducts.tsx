@@ -2,7 +2,7 @@
 import { Package, Palette, Settings, DoorOpen, Home, Hammer } from "lucide-react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
-const content : any = [
+const content: any = [
     {
         title: "Plywood & Boards",
         icon: <Package className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
@@ -11,52 +11,49 @@ const content : any = [
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Premium quality plywood, boards, and flush doors engineered for durability and strength in Indian conditions.
                 </p>
-                
+
                 <div className="space-y-4">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+                        Products Include
+                    </h4>
                     <div className="grid grid-cols-2 gap-x-6 gap-y-3">
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Commercial Plywood</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">BWP/Marine Plywood</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">MR Grade Plywood</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Block Board</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Flush Doors</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">MDF & HDHMR</p>
-                        </div>
+                        {[
+                            "Commercial Plywood",
+                            "BWP/Marine Plywood",
+                            "MR Grade Plywood",
+                            "Block Board",
+                            "Flush Doors",
+                            "MDF & HDHMR",
+                        ].map((item, i) => (
+                            <div
+                                key={i}
+                                className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors"
+                            >
+                                <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C]" />
+                                <p className="text-base font-medium">{item}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
-                    <p className="text-base text-[#8B5E3C] font-semibold">Strong. Durable. Tested for Indian Conditions.</p>
+                    <p className="text-base text-[#8B5E3C] font-semibold">
+                        Strong. Durable. Tested for Indian Conditions.
+                    </p>
                 </div>
             </div>
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                    src="https://images.unsplash.com/photo-1554230253-017daba2b631?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                <img
+                    src="https://images.unsplash.com/photo-1554230253-017daba2b631?q=80&w=1184&auto=format&fit=crop"
                     alt="Plywood & Boards"
                     className="h-full w-full object-cover"
                 />
             </div>
         ),
     },
+
     {
         title: "Laminates & Surface Solutions",
         icon: <Palette className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
@@ -65,47 +62,37 @@ const content : any = [
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
                     Premium decorative laminates and surface finishes that transform interiors with elegance and style.
                 </p>
-                
-                <div className="space-y-4">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
-                         <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Decorative Laminates</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">High Gloss Finish</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Matte Finish</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Textured Finish</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Acrylic Sheets</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">PVC Laminates</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="pt-4 border-t border-slate-100">
-                    <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">Premium finishes that elevate interiors.</p>
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                    {[
+                        "Decorative Laminates",
+                        "High Gloss Finish",
+                        "Matte Finish",
+                        "Textured Finish",
+                        "Acrylic Sheets",
+                        "PVC Laminates",
+                    ].map((item, i) => (
+                        <div
+                            key={i}
+                            className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C]"
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C]" />
+                            <p className="text-base font-medium">{item}</p>
+                        </div>
+                    ))}
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                    <p className="text-base text-[#8B5E3C] font-semibold">
+                        Premium finishes that elevate interiors.
+                    </p>
                 </div>
             </div>
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80"
-                    alt="Laminates & Surfaces"
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80"
+                    alt="Laminates"
                     className="h-full w-full object-cover"
                 />
             </div>
@@ -117,39 +104,27 @@ const content : any = [
         description: (
             <div className="space-y-6">
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                    Premium fittings from Hettich, Blum, Häfele, Ebco & Enox - trusted by architects and carpenters nationwide.
+                    Premium modular fittings trusted by architects and carpenters for smooth performance and long-lasting reliability.
                 </p>
-                
-                <div className="space-y-4">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Soft Close Hinges</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Drawer Channels</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Hydraulic Fittings</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Lift-Up Systems</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Wardrobe Accessories</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Kitchen Baskets</p>
-                        </div>
-                    </div>
-                </div>
 
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                    {[
+                        "Soft Close Hinges",
+                        "Drawer Channels",
+                        "Hydraulic Fittings",
+                        "Lift-Up Systems",
+                        "Wardrobe Accessories",
+                        "Kitchen Baskets",
+                    ].map((item, i) => (
+                        <div
+                            key={i}
+                            className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C]"
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C]" />
+                            <p className="text-base font-medium">{item}</p>
+                        </div>
+                    ))}
+                </div>
                 <div className="pt-4 border-t border-slate-100 space-y-2">
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Trusted Brands</p>
                     <p className="text-base text-slate-900 font-medium">Hettich • Blum • Häfele • Ebco • Enox</p>
@@ -158,53 +133,42 @@ const content : any = [
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                    src="https://images.unsplash.com/photo-1585128792158-4906e8dc9a39?w=800&q=80"
+                <img
+                    src="https://www.makwanaworld.com/images/modular-furniture-for-home-working-room-wardrobe-desk-chair-desktop.webp"
                     alt="Modular Hardware"
                     className="h-full w-full object-cover"
                 />
             </div>
         ),
     },
+
     {
         title: "Door & Furniture Hardware",
         icon: <DoorOpen className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                    High-quality locks, handles, and door fittings combining security with contemporary design aesthetics.
+                    Durable and stylish door hardware designed to deliver security, functionality, and modern aesthetics.
                 </p>
-                
-                <div className="space-y-4">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
-                         <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Door Locks</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Handles & Knobs</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Tower Bolts</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Aldrops</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Door Closers</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Mortise Locks</p>
-                        </div>
-                    </div>
-                </div>
 
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                    {[
+                        "Door Locks",
+                        "Handles & Knobs",
+                        "Tower Bolts",
+                        "Aldrops",
+                        "Door Closers",
+                        "Mortise Locks",
+                    ].map((item, i) => (
+                        <div
+                            key={i}
+                            className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C]"
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C]" />
+                            <p className="text-base font-medium">{item}</p>
+                        </div>
+                    ))}
+                </div>
                 <div className="pt-4 border-t border-slate-100">
                     <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">Security with style for modern spaces.</p>
                 </div>
@@ -212,107 +176,87 @@ const content : any = [
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+                <img
+                    src="https://media.istockphoto.com/id/1370675492/photo/fixing-door-lock-master.jpg?s=612x612&w=0&k=20&c=MdTzDR_ObGvpqFIY_B0g9-o6r1D46CkEmA68g5hdMOY="
                     alt="Door Hardware"
                     className="h-full w-full object-cover"
                 />
             </div>
         ),
     },
+
     {
         title: "Kitchen & Wardrobe Solutions",
         icon: <Home className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                    Smart modular storage systems and premium accessories for organized, functional living spaces.
+                    Smart modular solutions designed to maximize storage, organization, and everyday convenience.
                 </p>
-                
-                <div className="space-y-4">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Kitchen Accessories</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Cutlery Trays</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Corner Units</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Pantry Units</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Wardrobe Storage</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Organizers</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="pt-4 border-t border-slate-100">
-                    <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">Smart storage. Smooth living.</p>
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                    {[
+                        "Kitchen Accessories",
+                        "Cutlery Trays",
+                        "Corner Units",
+                        "Pantry Units",
+                        "Wardrobe Storage",
+                        "Organizers",
+                    ].map((item, i) => (
+                        <div
+                            key={i}
+                            className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C]"
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C]" />
+                            <p className="text-base font-medium">{item}</p>
+                        </div>
+                    ))}
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                    <p className="text-base text-[#8B5E3C] font-semibold">
+                        Strong. Durable. Tested for Indian Conditions.
+                    </p>
                 </div>
             </div>
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                    src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80"
+                <img
+                    src="https://img.freepik.com/premium-photo/3d-rendering-minimalist-kitchen-interior-design_674881-1059.jpg"
                     alt="Kitchen & Wardrobe"
                     className="h-full w-full object-cover"
                 />
             </div>
         ),
     },
+
     {
         title: "Adhesives & Accessories",
         icon: <Hammer className="h-10 w-10 text-[#8B5E3C]" strokeWidth={1.5} />,
         description: (
             <div className="space-y-6">
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                    Quality adhesives, fasteners, and finishing materials that hold your projects together perfectly.
+                    Reliable adhesives, fasteners, and finishing materials designed to deliver strength, durability, and precision.
                 </p>
-                
-                <div className="space-y-4">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Products Include</h4>
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-3">
-                         <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Fevicol Adhesives</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Wood Glue</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Screws & Fasteners</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Nails & Fittings</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Edge Bands</p>
-                        </div>
-                        <div className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C] transition-colors cursor-pointer">
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C] transition-colors"></span>
-                            <p className="text-base font-medium">Tapes & Tools</p>
-                        </div>
-                    </div>
-                </div>
 
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+                    {[
+                        "Fevicol Adhesives",
+                        "Wood Glue",
+                        "Screws & Fasteners",
+                        "Nails & Fittings",
+                        "Edge Bands",
+                        "Tapes & Tools",
+                    ].map((item, i) => (
+                        <div
+                            key={i}
+                            className="group flex items-center gap-2 text-slate-700 hover:text-[#8B5E3C]"
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8B5E3C]" />
+                            <p className="text-base font-medium">{item}</p>
+                        </div>
+                    ))}
+                </div>
                 <div className="pt-4 border-t border-slate-100">
                     <p className="text-sm text-[#8B5E3C] font-semibold tracking-wide">The finishing touch that holds everything together.</p>
                 </div>
@@ -320,33 +264,60 @@ const content : any = [
         ),
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                    src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&q=80"
+                <img
+                    src="https://thumbs.dreamstime.com/b/furniture-fittings-wooden-background-copy-space-laminated-229745720.jpg"
                     alt="Adhesives & Accessories"
                     className="h-full w-full object-cover"
                 />
             </div>
         ),
     },
+
 ];
 
 const OurProducts = () => {
     return (
-        <div className="w-full pb-20 font-secondary bg-[#FAF9F6]">
-            <div className="max-w-7xl mx-auto px-4 pt-20 mb-10">
-                <p className="text-sm font-semibold text-[#8B5E3C] uppercase tracking-wide mb-3 text-center">
+        <div className="w-full font-secondary bg-[#FAF9F6]">
+            <div className="max-w-7xl mx-auto px-4 pt-20 mb-10 text-center">
+                <p className="text-sm font-semibold text-[#8B5E3C] uppercase mb-3">
                     Our Products
                 </p>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                     Recommended Categories
                 </h2>
-                <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto">
-                    Discover our comprehensive range of premium products for every construction and interior need
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Discover our comprehensive range of premium products for every
+                    construction and interior need
                 </p>
             </div>
-            <StickyScroll content={content} />
+
+            {/* Desktop */}
+            <div className="hidden md:block">
+                <StickyScroll content={content} />
+            </div>
+
+            {/* Mobile */}
+            <div className="md:hidden px-4 space-y-16">
+                {content.map((item: any, index: number) => (
+                    <div key={index} className="space-y-6">
+                        <div className="h-[240px] rounded-2xl overflow-hidden shadow-lg">
+                            {item.content}
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                            {item.icon}
+                            <h3 className="text-2xl font-bold">{item.title}</h3>
+                        </div>
+
+                        {item.description}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
 
 export default OurProducts;
+
+
+

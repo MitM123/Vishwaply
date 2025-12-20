@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import newfalcon from '../assets/newfalcon.jpg';
 import fwschool from '../assets/fwschool.jpg'
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Award, Calendar, MapPin } from 'lucide-react';
 
 const OurProjects = () => {
   return (
@@ -104,10 +104,33 @@ const OurProjects = () => {
             viewport={{ once: true }}
           >
             <div>
-              <h3 className="text-4xl font-bold text-[#2C2C2C] mb-4">Minimalist</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Minimalist</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Minimalist style characterized by clean lines. We offer you a simplicity and functionality while embracing the concept of "less is more".
               </p>
+              <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white rounded-xl border border-gray-200">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Award className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                </div>
+              </div>
               <motion.button
                 className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
@@ -141,10 +164,33 @@ const OurProjects = () => {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-4xl font-bold text-[#2C2C2C] mb-4">Schools</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Schools</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Scandinavian style is underpinned by three main focuses: easy living, functionality and a penchant for all things natural.
               </p>
+              <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white rounded-xl border border-gray-200">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Award className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                </div>
+              </div>
               <motion.button
                 className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
@@ -164,10 +210,33 @@ const OurProjects = () => {
             viewport={{ once: true }}
           >
             <div>
-              <h3 className="text-4xl font-bold text-[#2C2C2C] mb-4">Schools</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Schools</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Minimalist style characterized by clean lines. We offer you a simplicity and functionality while embracing the concept of "less is more".
               </p>
+              <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white rounded-xl border border-gray-200">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Award className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                </div>
+              </div>
               <motion.button
                 className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
@@ -200,10 +269,33 @@ const OurProjects = () => {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-4xl font-bold text-[#2C2C2C] mb-4">Hospitals</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Hospitals</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Scandinavian style is underpinned by three main focuses: easy living, functionality and a penchant for all things natural.
               </p>
+              <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white rounded-xl border border-gray-200">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Award className="w-4 h-4 text-[#8B5E3C]" />
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
+                  </div>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                </div>
+              </div>
               <motion.button
                 className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}

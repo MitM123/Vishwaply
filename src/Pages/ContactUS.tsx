@@ -72,47 +72,45 @@ const ContactUs = () => {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 -mt-16 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-            <motion.div 
-                className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-            >
-                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Phone className="w-8 h-8 text-[#8B5E3C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Call Us</h3>
-                <p className="text-gray-600">+91 98765 43210</p>
-                <p className="text-gray-600">+91 12345 67890</p>
-            </motion.div>
+          <motion.div
+            className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+          >
+            <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
+              <Phone className="w-8 h-8 text-[#8B5E3C]" />
+            </div>
+            <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Call Us</h3>
+            <p className="text-gray-600">+91 95373 51890</p>
+          </motion.div>
 
-            <motion.div 
-                className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 }}
-            >
-                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Mail className="w-8 h-8 text-[#8B5E3C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Email Us</h3>
-                <p className="text-gray-600">contact@vishwaply.com</p>
-                <p className="text-gray-600">support@vishwaply.com</p>
-            </motion.div>
+          <motion.div
+            className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
+          >
+            <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
+              <Mail className="w-8 h-8 text-[#8B5E3C]" />
+            </div>
+            <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Email Us</h3>
+            <p className="text-gray-600">vishwaplyandhardware5671@gmail.com</p>
+          </motion.div>
 
-            <motion.div 
-                className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
-            >
-                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <MapPin className="w-8 h-8 text-[#8B5E3C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Visit Us</h3>
-                <p className="text-gray-600">123, Industrial Area,</p>
-                <p className="text-gray-600">Surat, Gujarat - 395001</p>
-            </motion.div>
+          <motion.div
+            className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+          >
+            <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
+              <MapPin className="w-8 h-8 text-[#8B5E3C]" />
+            </div>
+            <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Visit Us</h3>
+            <p className="text-gray-600"> 17,18,19, First floor, Snehsagar Soc,</p>
+            <p className="text-gray-600">Abrama Rd,Mota Varachha, Surat,Gujarat </p>
+          </motion.div>
         </div>
       </div>
 
@@ -120,26 +118,26 @@ const ContactUs = () => {
       {/* Map and Form Section */}
       <div className="pb-24 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12  bg-white rounded-2xl shadow-xl overflow-hidden">
 
             {/* Left Side - Map */}
             <motion.div
-              className="h-[600px] lg:h-auto bg-gray-200"
-              initial={{ opacity: 0, x: -50 }}
+              className="h-[320px] sm:h-[400px] md:h-[600px] lg:h-[600px] m-10 rounded-2xl overflow-hidden bg-gray-200"
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
               viewport={{ once: true }}
             >
               <iframe
-                src="https://www.google.com/maps/place/VISHWA+PLY+%26+HARDWARE/@21.2464971,72.8278125,12z/data=!4m6!3m5!1s0x3be04f003f86653f:0x1cb72815d8026009!8m2!3d21.246897!4d72.8905239!16s%2Fg%2F11vymzdg87?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.9862321675947!2d72.8879489!3d21.246897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f003f86653f%3A0x1cb72815d8026009!2sVISHWA%20PLY%20%26%20HARDWARE!5e0!3m2!1sen!2sin!4v1700000000000"
+                className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Office Location"
-              ></iframe>
+                title="Vishwa Ply & Hardware Location"
+                allowFullScreen
+              />
             </motion.div>
+
 
             {/* Right Side - Form */}
             <motion.div
