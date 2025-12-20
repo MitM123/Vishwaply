@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, Outlet } from 'react-router';
+import { Link, Outlet, useLocation } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 import logo from '../assets/logo.png';
@@ -7,6 +7,7 @@ import logo from '../assets/logo.png';
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,17 +22,9 @@ const Navbar = () => {
         { name: "OUR PROJECTS", path: "/ourprojects" },
         { name: "ABOUT US", path: "/aboutus" }
     ];
-
     const navbarClasses = scrolled
         ? "bg-[#faf9f590] backdrop-blur-md"
         : "bg-transparent py-2";
-
-    const linkClasses = scrolled
-        ? "text-gray-800 hover:text-[#8B5E3C]"
-        : "text-gray-800 hover:text-[#8B5E3C] md:text-white md:hover:text-gray-200"; // White text on transparent (dark hero), dark on white
-
-    // Solid brown button color
-    const buttonClass = "px-6 py-2.5 bg-[#8B5E3C] text-white font-bold rounded-full hover:bg-[#6D4C3D] transition-colors shadow-lg";
 
     return (
         <>
@@ -45,18 +38,29 @@ const Navbar = () => {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">
-                        {links.map((link) => (
-                            <Link 
-                                key={link.name} 
-                                to={link.path} 
-                                className={`text-sm font-bold tracking-wide transition-colors ${linkClasses}`}
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
-                        
-                        <Link to="/contactus" className={buttonClass}>
-                            CONTACT US
+                        <Link 
+                            to="/" 
+                            className={`${location.pathname === '/' ? 'text-[#8B5E3C]' : (scrolled ? 'text-gray-700 hover:text-[#8B5E3C]' : 'text-white/90 hover:text-white')} font-medium transition-colors`}
+                        >
+                            Home
+                        </Link>
+                        <Link 
+                            to="/our-projects" 
+                            className={`${location.pathname === '/our-projects' ? 'text-[#8B5E3C]' : (scrolled ? 'text-gray-700 hover:text-[#8B5E3C]' : 'text-white/90 hover:text-white')} font-medium transition-colors`}
+                        >
+                            Our Projects
+                        </Link>
+                        <Link 
+                            to="/about-us" 
+                            className={`${location.pathname === '/about-us' ? 'text-[#8B5E3C]' : (scrolled ? 'text-gray-700 hover:text-[#8B5E3C]' : 'text-white/90 hover:text-white')} font-medium transition-colors`}
+                        >
+                            About Us
+                        </Link>
+                        <Link 
+                            to="/contact-us" 
+                            className="px-6 py-2.5 bg-[#8B5E3C] text-white font-bold rounded-full hover:bg-[#6D4C3D] transition-colors shadow-lg"
+                        >
+                            Contact Us
                         </Link>
                     </div>
 
@@ -82,18 +86,8 @@ const Navbar = () => {
                         className="fixed top-[60px] left-0 right-0 bg-white shadow-xl z-40 md:hidden border-t border-gray-100 overflow-hidden"
                     >
                         <div className="flex flex-col p-6 space-y-6">
-                            {links.map((link) => (
-                                <Link
-                                    key={link.name}
-                                    to={link.path}
-                                    className="text-lg font-bold text-gray-800 hover:text-[#8B5E3C]"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                >
-                                    {link.name}
-                                </Link>
-                            ))}
                             <Link
-                                to="/contactus"
+                                to="/contact-us"
                                 className={`text-center ${buttonClass} w-full`}
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >

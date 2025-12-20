@@ -6,14 +6,14 @@ import { ArrowUpRight } from 'lucide-react';
 const OurProjects = () => {
   return (
     <div className="h-[100vh] w-full font-secondary bg-[#FAF9F6]">
-      <div className="relative h-[80vh] mb-10 overflow-hidden">
+      <div className="relative h-[60vh] mb-10 overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80"
             alt="About Us"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#faf9f6f2]"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div className="relative h-full max-w-7xl mx-auto px-6 lg:px-12 flex items-center">
@@ -40,7 +40,7 @@ const OurProjects = () => {
               Creative Projects
             </motion.h1>
             <motion.p
-              className="text-lg text-gray-800 font-bold  max-w-2xl"
+              className="text-lg text-gray-200 font-medium max-w-2xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
@@ -109,7 +109,7 @@ const OurProjects = () => {
                 Minimalist style characterized by clean lines. We offer you a simplicity and functionality while embracing the concept of "less is more".
               </p>
               <motion.button
-                className="flex items-center gap-2 text-[#2C2C2C] font-medium hover:text-[#E6C9A8] transition-colors"
+                className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
               >
                 Read More
@@ -146,7 +146,7 @@ const OurProjects = () => {
                 Scandinavian style is underpinned by three main focuses: easy living, functionality and a penchant for all things natural.
               </p>
               <motion.button
-                className="flex items-center gap-2 text-[#2C2C2C] font-medium hover:text-[#E6C9A8] transition-colors"
+                className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
               >
                 Read More
@@ -169,7 +169,7 @@ const OurProjects = () => {
                 Minimalist style characterized by clean lines. We offer you a simplicity and functionality while embracing the concept of "less is more".
               </p>
               <motion.button
-                className="flex items-center gap-2 text-[#2C2C2C] font-medium hover:text-[#E6C9A8] transition-colors"
+                className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
               >
                 Read More
@@ -205,7 +205,7 @@ const OurProjects = () => {
                 Scandinavian style is underpinned by three main focuses: easy living, functionality and a penchant for all things natural.
               </p>
               <motion.button
-                className="flex items-center gap-2 text-[#2C2C2C] font-medium hover:text-[#E6C9A8] transition-colors"
+                className="flex items-center gap-2 px-6 py-3 bg-[#8B5E3C] text-white font-medium rounded-full hover:bg-[#6D4C3D] transition-colors"
                 whileHover={{ x: 5 }}
               >
                 Read More

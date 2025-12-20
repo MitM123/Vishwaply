@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send } from 'lucide-react';
+import { Send, Phone, Mail, MapPin } from 'lucide-react';
+import { useState } from 'react';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -36,8 +36,9 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen font-secondary bg-[#FAF9F6]">
       {/* Hero Section */}
-      <div className="py-24 px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto text-center">
+      <div className="relative bg-[#1a1a1a] py-32 px-6 lg:px-12 overflow-hidden">
+        <div className="absolute inset-0 bg-[#1a1a1a]"></div>
+        <div className="max-w-7xl mx-auto relative z-10 text-center">
           <motion.p
             className="text-[#E6C9A8] text-lg font-medium mb-4 tracking-wider"
             initial={{ opacity: 0, y: 20 }}
@@ -48,7 +49,7 @@ const ContactUs = () => {
           </motion.p>
 
           <motion.h1
-            className="text-6xl lg:text-7xl font-bold text-[#2C2C2C] leading-tight mb-8"
+            className="text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -59,25 +60,71 @@ const ContactUs = () => {
           </motion.h1>
 
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible to discuss how we can bring your vision to life.
+            Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </motion.p>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 -mt-16 relative z-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+            <motion.div 
+                className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+            >
+                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Phone className="w-8 h-8 text-[#8B5E3C]" />
+                </div>
+                <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Call Us</h3>
+                <p className="text-gray-600">+91 98765 43210</p>
+                <p className="text-gray-600">+91 12345 67890</p>
+            </motion.div>
+
+            <motion.div 
+                className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
+            >
+                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Mail className="w-8 h-8 text-[#8B5E3C]" />
+                </div>
+                <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Email Us</h3>
+                <p className="text-gray-600">contact@vishwaply.com</p>
+                <p className="text-gray-600">support@vishwaply.com</p>
+            </motion.div>
+
+            <motion.div 
+                className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+            >
+                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-6">
+                    <MapPin className="w-8 h-8 text-[#8B5E3C]" />
+                </div>
+                <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Visit Us</h3>
+                <p className="text-gray-600">123, Industrial Area,</p>
+                <p className="text-gray-600">Surat, Gujarat - 395001</p>
+            </motion.div>
         </div>
       </div>
 
 
       {/* Map and Form Section */}
-      <div className="py-16 px-6 lg:px-12">
+      <div className="pb-24 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl overflow-hidden">
 
             {/* Left Side - Map */}
             <motion.div
-              className="h-[600px] bg-gray-200"
+              className="h-[600px] lg:h-auto bg-gray-200"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
