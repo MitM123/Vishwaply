@@ -95,7 +95,7 @@ const ContactUs = () => {
               <Mail className="w-8 h-8 text-[#8B5E3C]" />
             </div>
             <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">Email Us</h3>
-            <p className="text-gray-600">vishwaplyandhardware5671@gmail.com</p>
+            <p className="text-gray-600">vishwaplyhardware@gmail.com</p>
           </motion.div>
 
           <motion.div

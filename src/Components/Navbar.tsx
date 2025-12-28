@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, Outlet, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from '../assets/Vishwalogo.png';    
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = () => {
                         <img
                             src={logo}
                             alt="Vishwaply"
-                            className={`h-16 w-auto object-contain transition-all duration-300 ${!scrolled ? "brightness-0 invert" : ""
+                            className={`h-17 w-auto object-contain transition-all duration-300 ${!scrolled ? "brightness-0 invert" : ""
                                 }`}
                         />
                     </Link>
@@ -70,10 +70,10 @@ const Navbar = () => {
                                 key={link.path}
                                 to={link.path}
                                 className={`font-medium transition-colors ${location.pathname === link.path
-                                        ? "text-[#8B5E3C]"
-                                        : scrolled
-                                            ? "text-gray-700 hover:text-[#8B5E3C]"
-                                            : "text-white/90 hover:text-white"
+                                    ? "text-[#8B5E3C]"
+                                    : scrolled
+                                        ? "text-gray-700 hover:text-[#8B5E3C]"
+                                        : "text-white/90 hover:text-white"
                                     }`}
                             >
                                 {link.name}
@@ -141,8 +141,8 @@ const Navbar = () => {
                                     <Link
                                         to={link.path}
                                         className={`text-lg font-medium transition-colors ${location.pathname === link.path
-                                                ? "text-[#8B5E3C]"
-                                                : "text-gray-800 hover:text-[#8B5E3C]"
+                                            ? "text-[#8B5E3C]"
+                                            : "text-gray-800 hover:text-[#8B5E3C]"
                                             }`}
                                     >
                                         {link.name}

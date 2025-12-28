@@ -1,22 +1,23 @@
 import { cn } from "@/lib/utils"
 import { Marquee } from "./ui/marquee"
+import Shaynex from '../assets/Shynex.png'
 
 const companies = [
     {
-        name: "Airbnb",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg",
+        name: "Enox",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCM2WAm6UR-GFZe9Ena9bGTSgVxzA0ZfK_Q&s",
     },
     {
         name: "FedEx",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UpQ87B6piizUPRe5ha3rZSkuJWFoKf6m3Q&s",
     },
     {
         name: "Google",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnl0b4XJzfwqQhhGanYFEFrSj4VU0R6NDhw&s",
     },
     {
         name: "Amazon",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Blum_brandboxmin_2.png",
     },
     {
         name: "HubSpot",
@@ -24,7 +25,7 @@ const companies = [
     },
     {
         name: "Walmart",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
+        logo: Shaynex,
     },
     {
         name: "Microsoft",
@@ -71,8 +72,8 @@ const CompanyCard = ({
                 "shadow-sm hover:shadow-md"
             )}
         >
-            <img 
-                className="h-8 w-auto max-w-full object-contain opacity-90 hover:opacity-100 transition-all duration-300" 
+            <img
+                className="h-10 w-auto max-w-full object-contain opacity-90 hover:opacity-100 transition-all duration-300"
                 alt={name}
                 src={logo}
             />
@@ -84,7 +85,7 @@ const Company = () => {
     return (
         <div className="relative font-secondary flex w-full flex-col items-center  justify-center overflow-hidden bg-[#FAF9F6] dark:bg-gray-950 py-28">
             <div className="mb-4 text-center px-4 ">
-              
+
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-3">
                     Building the future with industry leaders
                 </h2>
@@ -92,7 +93,7 @@ const Company = () => {
                     Join 50,000+ companies transforming their industries with us.
                 </p>
             </div>
-            
+
             <div className="relative w-full mt-12">
                 <Marquee pauseOnHover className="[--duration:30s] mb-6">
                     {firstRow.map((company) => (
@@ -104,7 +105,7 @@ const Company = () => {
                         <CompanyCard key={company.name} {...company} />
                     ))}
                 </Marquee>
-                
+
                 {/* Gradient fade on edges */}
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent"></div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent"></div>
