@@ -7,44 +7,42 @@ const CustomerReviews = () => {
 
   const reviews = [
     {
-      name: "Mit Monpara",
-      role: "Marketing Director",
-      content:
-        "Working with this team has been transformative for our business. Their attention to detail and commitment to excellence is unmatched.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
-    },
-    {
-      name: "Nayan Goyani",
-      role: "CEO & Founder",
+      name: "BhavikBhai Paladiya",
+      role: "CEO & Founder of Avadh Elevator",
       content:
         "The level of professionalism and expertise exceeded all our expectations. They delivered on time and the quality was outstanding.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
+      // avatar:
+      //   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
     },
     {
-      name: "Dharmesh Goyani",
-      role: "Product Manager",
+      name: "HardikBhai Khunt",
+      role: "D H Patel Group (Kinsfolk)",
       content:
         "From start to finish, the experience was seamless. Their innovative approach made all the difference.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
+      // avatar:
+      //   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
     },
     {
-      name: "AP Rajput",
-      role: "CTO",
+      name: "NilayBhai Dobariya",
+      role: "Dobariya Developers",
       content:
         "Exceptional service and remarkable results. They understood our vision perfectly.",
-      avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop",
+      // avatar:
+      //   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop",
     },
     {
-      name: "SS Banna",
-      role: "Operations Manager",
+      name: "ArvindBhai Bhalani",
+      role: "Chairman of Flowervalley School",
       content:
         "Their expertise and commitment to quality is evident in everything they do.",
-      avatar:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop",
+     
+    },
+    {
+      name: "Dr ManishBhai Mendapara",
+      role: "Om hospital",
+      content:
+        "Working with this team has been transformative for our business. Their attention to detail and commitment to excellence is unmatched.",
+     
     },
   ];
 
@@ -90,8 +88,8 @@ const CustomerReviews = () => {
               onClick={prevSlide}
               disabled={currentIndex === 0}
               className={`p-3 cursor-pointer rounded-full border-2 transition-all ${currentIndex === 0
-                  ? "border-gray-300 text-gray-300"
-                  : "border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white"
+                ? "border-gray-300 text-gray-300"
+                : "border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white"
                 }`}
             >
               <ChevronLeft className="w-5 h-5" />
@@ -100,8 +98,8 @@ const CustomerReviews = () => {
               onClick={nextSlide}
               disabled={currentIndex >= maxIndex}
               className={`p-3 cursor-pointer rounded-full border-2 transition-all ${currentIndex >= maxIndex
-                  ? "border-gray-300 text-gray-300"
-                  : "border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white"
+                ? "border-gray-300 text-gray-300"
+                : "border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white"
                 }`}
             >
               <ChevronRight className="w-5 h-5" />
@@ -128,11 +126,11 @@ const CustomerReviews = () => {
                   </p>
 
                   <div className="flex items-center gap-4 mt-auto">
-                    <img
+                    {/* <img
                       src={review.avatar}
                       alt={review.name}
                       className="w-12 h-12 rounded-full object-cover"
-                    />
+                    /> */}
                     <div>
                       <h4 className="font-semibold text-[#2C2C2C]">
                         {review.name}

@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils"
 import { Marquee } from "./ui/marquee"
 import Shaynex from '../assets/Shynex.png'
+import sre from '../assets/sre.png'
+import Matwud from '../assets/Matwud.png'
+
 
 const companies = [
     {
@@ -20,20 +23,20 @@ const companies = [
         logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Blum_brandboxmin_2.png",
     },
     {
-        name: "HubSpot",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/HubSpot_Logo.svg",
+        name: "sre",
+        logo: sre,
     },
     {
         name: "Walmart",
         logo: Shaynex,
     },
     {
-        name: "Microsoft",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+        name: "Matwud",
+        logo: Matwud,
     },
     {
-        name: "Adobe",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_Logo.svg",
+        name: "Siam",
+        logo: "http://static.wixstatic.com/media/889c9d_49588d37d6a04556a0defece1f616ae3~mv2.jpg/v1/crop/x_0,y_4,w_881,h_393/fill/w_330,h_148,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/with%20tagline(1)BG%20(1)_edited.jpg",
     },
     {
         name: "Shopify",

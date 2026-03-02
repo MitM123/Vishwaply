@@ -8,7 +8,7 @@ export default function Partner() {
 
   const stats = [
     {
-      value: "500+",
+      value: "700+",
       label: "Happy Clients",
       description: "Builders, architects, and homeowners who trust our quality."
     },

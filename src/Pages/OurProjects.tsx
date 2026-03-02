@@ -114,14 +114,14 @@ const OurProjects = () => {
                     <MapPin className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Variyav</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <Calendar className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2025</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -164,7 +164,7 @@ const OurProjects = () => {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Schools</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Flower valley School</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Scandinavian style is underpinned by three main focuses: easy living, functionality and a penchant for all things natural.
               </p>
@@ -181,7 +181,7 @@ const OurProjects = () => {
                     <Calendar className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2024</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -210,7 +210,7 @@ const OurProjects = () => {
             viewport={{ once: true }}
           >
             <div>
-              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Schools</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">VidhyaDhish School</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Minimalist style characterized by clean lines. We offer you a simplicity and functionality while embracing the concept of "less is more".
               </p>
@@ -227,7 +227,7 @@ const OurProjects = () => {
                     <Calendar className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2026</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -245,12 +245,15 @@ const OurProjects = () => {
                 <ArrowUpRight className="w-5 h-5" />
               </motion.button>
             </div>
-            <div className="h-[400px]">
-              <img
+            <div className="h-[400px] bg-gray-200 rounded-2xl" >
+              {/* <img
                 src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80"
                 alt="Minimalist Interior"
                 className="w-full h-full object-cover"
-              />
+              /> */}
+              <h1 className="text-3xl font-bold font-Cabin text-gray-500 flex items-center justify-center h-full">
+                Coming Soon
+              </h1>
             </div>
           </motion.div>
 
@@ -261,15 +264,18 @@ const OurProjects = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="h-[400px] order-2 lg:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
-                alt="Scandinavian Interior"
+            <div className="h-[400px] bg-gray-200 rounded-2xl" >
+              {/* <img
+                src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80"
+                alt="Minimalist Interior"
                 className="w-full h-full object-cover"
-              />
+              /> */}
+              <h1 className="text-3xl font-bold font-Cabin text-gray-500 flex items-center justify-center h-full">
+                Coming Soon
+              </h1>
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">Hospitals</h3>
+              <h3 className="text-4xl font-Cinzel font-extrabold text-[#2C2C2C] mb-4">OM Hospital</h3>
               <p className="text-gray-500 text-base leading-relaxed mb-6">
                 Scandinavian style is underpinned by three main focuses: easy living, functionality and a penchant for all things natural.
               </p>
@@ -286,7 +292,7 @@ const OurProjects = () => {
                     <Calendar className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Completed</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2023</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">2026</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">

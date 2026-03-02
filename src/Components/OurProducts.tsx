@@ -1,6 +1,7 @@
 "use client";
 import { Package, Palette, Settings, DoorOpen, Home, Hammer } from "lucide-react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import Bwp from '../assets/Ply.jpeg'
 
 const content: any = [
     {
@@ -46,9 +47,9 @@ const content: any = [
         content: (
             <div className="h-full w-full rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                    src="https://images.unsplash.com/photo-1554230253-017daba2b631?q=80&w=1184&auto=format&fit=crop"
+                    src= {Bwp}
                     alt="Plywood & Boards"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full p-5 object-cover"
                 />
             </div>
         ),

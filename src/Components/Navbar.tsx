@@ -58,7 +58,7 @@ const Navbar = () => {
                         <img
                             src={logo}
                             alt="Vishwaply"
-                            className={`h-17 w-auto object-contain transition-all duration-300 ${!scrolled ? "brightness-0 invert" : ""
+                            className={`h-17 w-auto object-contain transition-all duration-300 ${!scrolled ? "ko" : ""
                                 }`}
                         />
                     </Link>
