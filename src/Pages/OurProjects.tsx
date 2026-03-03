@@ -128,7 +128,7 @@ const OurProjects = () => {
                     <Award className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">24300 sq.ft</p>
                 </div>
               </div>
               <motion.button
@@ -174,7 +174,7 @@ const OurProjects = () => {
                     <MapPin className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Variyav</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -188,7 +188,7 @@ const OurProjects = () => {
                     <Award className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">12000 sq.ft</p>
                 </div>
               </div>
               <motion.button
@@ -234,7 +234,7 @@ const OurProjects = () => {
                     <Award className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">8000 sq.ft</p>
                 </div>
               </div>
               <motion.button
@@ -285,7 +285,7 @@ const OurProjects = () => {
                     <MapPin className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Location</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">Mota Varachha</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">Varachha</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -299,7 +299,7 @@ const OurProjects = () => {
                     <Award className="w-4 h-4 text-[#8B5E3C]" />
                     <p className="text-xs font-semibold text-gray-500 uppercase">Area</p>
                   </div>
-                  <p className="text-sm font-bold text-[#2C2C2C]">2000 sq.ft</p>
+                  <p className="text-sm font-bold text-[#2C2C2C]">9000 sq.ft</p>
                 </div>
               </div>
               <motion.button

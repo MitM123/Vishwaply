@@ -39,20 +39,20 @@ const companies = [
         logo: "http://static.wixstatic.com/media/889c9d_49588d37d6a04556a0defece1f616ae3~mv2.jpg/v1/crop/x_0,y_4,w_881,h_393/fill/w_330,h_148,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/with%20tagline(1)BG%20(1)_edited.jpg",
     },
     {
-        name: "Shopify",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg",
+        name: "ozone",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSo6gOSwT2dK3CJhdj5bWr7ziSlYMLJLjT1g&s",
     },
     {
-        name: "Uber",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/5/58/Uber_logo_2018.svg",
+        name: "Tilma",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57tkTitZv0onAoW-ZqoK0i30zfTlFt-YIAA&s",
     },
     {
-        name: "Netflix",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+        name: "Godrej",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/330px-Godrej_Logo.svg.png",
     },
     {
-        name: "Tesla",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg",
+        name: "yale",
+        logo: "https://cdn.cookielaw.org/logos/275398a4-ad09-4041-b5dc-7e8d51543d93/eda9f42d-0c13-4100-9c96-724e25484845/4683119c-17ad-418b-a0ac-b29dbb195b03/Yale_Logo_Primary_Regular_RGB_(2).png",
     },
 ]
 
@@ -93,7 +93,7 @@ const Company = () => {
                     Building the future with industry leaders
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                    Join 50,000+ companies transforming their industries with us.
+                    Join 70+ companies transforming their industries with us.
                 </p>
             </div>
 
