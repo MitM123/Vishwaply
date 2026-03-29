@@ -20,7 +20,7 @@ type Project = {
 const PROJECTS: Project[] = [
   {
     id: "1",
-    title: "New Falcon",
+    title: "Residential",
     tag: "Minimalist residential",
     description:
       "Clean lines and calm palettes — simplicity and function with materials chosen for longevity and finish.",
