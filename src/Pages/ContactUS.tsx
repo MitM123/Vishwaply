@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Send, Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const ContactUs = () => {
   const handleSubmit = () => {
     console.log('Form submitted:', formData);
     // Handle form submission here
-    alert('Thank you for your message! We will get back to you soon.');
+    toast.success('Thank you for your message! We will get back to you soon.');
     setFormData({
       name: '',
       email: '',
