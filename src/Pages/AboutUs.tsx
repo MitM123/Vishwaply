@@ -38,24 +38,27 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen font-secondary bg-[#FAF9F6]">
-
-      {/* Our Story Section */}
-      {/* Hero Section - Our Story */}
-      <div className="relative bg-[#1a1a1a] py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="absolute inset-0 bg-[#1a1a1a]"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
+      <div className="border-b border-[#8B5E3C]/12 bg-gradient-to-b from-[#EDE6DD] to-[#FAF9F6] pt-24 pb-12 sm:pt-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="max-w-3xl"
           >
-            <h1 className="text-6xl font-bold text-white mb-8">Our Story</h1>
-            <p className="text-gray-300 text-xl leading-relaxed mb-6 font-light">
-              Founded with a passion for transforming spaces, we've grown from a small studio into a leading interior design firm. Our journey has been driven by one simple belief: every space has the potential to inspire.
+            <p className="font-Cinzel text-[11px] font-semibold uppercase tracking-[0.35em] text-[#8B5E3C]">
+              About us
             </p>
-            <p className="text-gray-400 text-lg leading-relaxed font-light">
-              Over the years, we've honed our craft, blending timeless elegance with contemporary innovation. Each project is a new opportunity to push boundaries and create environments that enrich lives.
+            <h1 className="mt-3 font-Cinzel text-2xl font-semibold text-[#2C2C2C] sm:text-3xl md:text-4xl">
+              Our story
+            </h1>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+              Founded with a passion for transforming spaces, we&apos;ve grown from a small studio into a team focused
+              on interiors and materials that last. Every space has the potential to inspire.
+            </p>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              Over the years, we&apos;ve blended timeless elegance with contemporary innovation — each project a chance
+              to create environments that enrich lives.
             </p>
           </motion.div>
         </div>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Send, Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router';
 import toast from 'react-hot-toast';
 
 const ContactUs = () => {
@@ -36,42 +37,32 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen font-secondary bg-[#FAF9F6]">
-      {/* Hero Section */}
-      <div className="relative bg-[#1a1a1a] py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="absolute inset-0 bg-[#1a1a1a]"></div>
-        <div className="max-w-7xl mx-auto relative z-10 text-center">
-          <motion.p
-            className="text-[#E6C9A8] text-lg font-medium mb-4 tracking-wider"
-            initial={{ opacity: 0, y: 20 }}
+      <div className="border-b border-[#8B5E3C]/12 bg-gradient-to-b from-[#EDE6DD] to-[#FAF9F6] pt-24 pb-10 sm:pt-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
           >
-            GET IN TOUCH
-          </motion.p>
-
-          <motion.h1
-            className="text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Let's Create Your
-            <br />
-            <span className="text-[#E6C9A8]">Dream Space</span>
-          </motion.h1>
-
-          <motion.p
-            className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-          </motion.p>
+            <p className="font-Cinzel text-[11px] font-semibold uppercase tracking-[0.35em] text-[#8B5E3C]">
+              Contact
+            </p>
+            <h1 className="mt-3 font-Cinzel text-2xl font-semibold text-[#2C2C2C] sm:text-3xl md:text-4xl">
+              Let&apos;s talk about your project
+            </h1>
+            <p className="mt-3 max-w-2xl text-gray-600">
+              Send a message, call, or visit — we&apos;ll respond as soon as we can. For department-wise help and
+              complaints (Gujarati), use{" "}
+              <Link to="/support" className="font-semibold text-[#8B5E3C] underline-offset-2 hover:underline">
+                Support
+              </Link>
+              .
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 -mt-16 relative z-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-10 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
           <motion.div
             className="bg-white p-8 shadow-lg rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"

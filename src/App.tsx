@@ -7,6 +7,7 @@ import AboutUs from "./Pages/AboutUs";
 import ContactUS from "./Pages/ContactUS";
 import OurProjects from "./Pages/OurProjects";
 import Gallery from "./Pages/Gallery";
+import Support from "./Pages/Support";
 
 /** Scroll to top on every client-side navigation (fixes stale scroll position). */
 function ScrollToTop() {
@@ -30,6 +31,7 @@ function App() {
           <Route path='/our-projects' element={<OurProjects />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contact-us' element={<ContactUS />} />
+          <Route path='/support' element={<Support />} />
         </Route>
       </Routes>
     </>
