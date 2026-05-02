@@ -14,14 +14,25 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 
-const HELPLINE_24_7 = "+919527351890";
-const HELPLINE_DISPLAY = "+91 95373 51890";
-const WHATSAPP_NUMBER = "919527351890";
+/**
+ * International format for WhatsApp / tel: digits only, no + (e.g. 91 + 10 digits).
+ * api.whatsapp.com/send avoids wrong "invite" screens from bad wa.me numbers.
+ */
+const CONTACT = {
+  delivery: { digits: "919725166919", display: "+91 97251 66919" },
+  accounts: { digits: "919909923223", display: "+91 99099 23223" },
+  complaint: { digits: "919979593927", display: "+91 99795 93927" },
+  sales: { digits: "919377408167", display: "+91 93774 08167" },
+} as const;
+
+/** Top banner: general showroom / sales line */
+const MAIN = CONTACT.sales;
 
 const DEPARTMENTS = [
   {
     id: "delivery",
     icon: Truck,
+    phone: CONTACT.delivery,
     title: "Delivery Support",
     titleGu: "ડિલિવરી સપોર્ટ",
     hint: "Status, delays & scheduling · સ્થિતિ, વિલંબ",
@@ -30,6 +41,7 @@ const DEPARTMENTS = [
   {
     id: "accounts",
     icon: Calculator,
+    phone: CONTACT.accounts,
     title: "Accounts Support",
     titleGu: "એકાઉન્ટ્સ સપોર્ટ",
     hint: "Payments, invoices & statements · ચુકવણી, ઇન્વોઇસ",
@@ -38,6 +50,7 @@ const DEPARTMENTS = [
   {
     id: "complaint",
     icon: AlertCircle,
+    phone: CONTACT.complaint,
     title: "Complaint Desk",
     titleGu: "ફરિયાદ ડેસ્ક",
     hint: "Damage, quality, replacement · નુકસાન, ગુણવત્તા, બદલી",
@@ -46,6 +59,7 @@ const DEPARTMENTS = [
   {
     id: "sales",
     icon: Store,
+    phone: CONTACT.sales,
     title: "Sales & Showroom",
     titleGu: "સેલ્સ અને શોરૂમ",
     hint: "Quotes, products & orders · કોટેશન, પ્રોડક્ટ",
@@ -110,8 +124,11 @@ Photo / ફોટો: Attach image in WhatsApp after typing (ટાઇપ પછ
 Thank you / આભાર`;
 }
 
-function waUrl(text: string) {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+/** Direct chat: correct country code + api.whatsapp.com (opens app / web chat, not invite). */
+function whatsappSendUrl(phoneDigits: string, message: string) {
+  const phone = phoneDigits.replace(/\D/g, "");
+  const text = encodeURIComponent(message);
+  return `https://api.whatsapp.com/send?phone=${phone}&text=${text}`;
 }
 
 const Support = () => {
@@ -123,7 +140,10 @@ const Support = () => {
     [complaintType],
   );
 
-  const complaintWaHref = useMemo(() => waUrl(complaintMessage), [complaintMessage]);
+  const complaintWaHref = useMemo(
+    () => whatsappSendUrl(CONTACT.complaint.digits, complaintMessage),
+    [complaintMessage],
+  );
 
   const copyTemplate = async () => {
     try {
@@ -159,19 +179,22 @@ const Support = () => {
             </p>
             <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <a
-                href={`tel:${HELPLINE_24_7}`}
+                href={`tel:+${MAIN.digits}`}
                 className="inline-flex items-center justify-center gap-3 rounded-2xl bg-[#8B5E3C] px-6 py-4 text-white shadow-md transition hover:bg-[#6D4C3D]"
               >
                 <Headphones className="h-5 w-5 shrink-0" />
                 <span className="text-left">
                   <span className="block text-[10px] font-semibold uppercase tracking-wider text-[#E6C9A8]/95">
-                    24×7 Helpline / હેલ્પલાઇન
+                    Helpline / હેલ્પલાઇન (Sales)
                   </span>
-                  <span className="font-Cinzel text-lg font-bold">{HELPLINE_DISPLAY}</span>
+                  <span className="font-Cinzel text-lg font-bold">{MAIN.display}</span>
                 </span>
               </a>
               <a
-                href={waUrl("Hello — Vishwa Ply & Hardware support.\nનમસ્તે — વિશ્વા પ્લાય એન્ડ હાર્ડવેર.")}
+                href={whatsappSendUrl(
+                  MAIN.digits,
+                  "Hello — Vishwa Ply & Hardware.\nનમસ્તે — વિશ્વા પ્લાય એન્ડ હાર્ડવેર.",
+                )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[#20BD5A]"
@@ -217,14 +240,17 @@ const Support = () => {
                 </div>
                 <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
                   <a
-                    href={`tel:${HELPLINE_24_7}`}
+                    href={`tel:+${d.phone.digits}`}
                     className="inline-flex items-center gap-1.5 rounded-full border border-[#8B5E3C]/25 bg-[#FAF9F6] px-4 py-2 text-xs font-semibold text-[#8B5E3C] transition hover:border-[#8B5E3C] hover:bg-white"
                   >
                     <Phone className="h-3.5 w-3.5" />
-                    Call
+                    {d.phone.display}
                   </a>
                   <a
-                    href={waUrl(`${d.waIntro}\n\nPlease describe your need / તમારી જરૂરિયાત લખો.`)}
+                    href={whatsappSendUrl(
+                      d.phone.digits,
+                      `${d.waIntro}\n\nPlease describe your need / તમારી જરૂરિયાત લખો.`,
+                    )}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#20BD5A]"
@@ -246,9 +272,12 @@ const Support = () => {
               <h2 className="font-Cinzel text-lg font-bold">Showroom location / શોરૂમ</h2>
               <p className="mt-2 text-sm leading-relaxed text-gray-700">{SHOWROOM_LINES.en}</p>
               <p className="mt-2 text-sm leading-relaxed text-gray-600">{SHOWROOM_LINES.gu}</p>
-              <a href={`tel:${HELPLINE_24_7}`} className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#8B5E3C]">
+              <a
+                href={`tel:+${MAIN.digits}`}
+                className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#8B5E3C]"
+              >
                 <Phone className="h-4 w-4" />
-                {HELPLINE_DISPLAY}
+                {MAIN.display}
               </a>
             </div>
           </div>
@@ -363,8 +392,11 @@ const Support = () => {
                 <span className="hidden text-gray-300 sm:inline" aria-hidden>
                   |
                 </span>
-                <a href={`tel:${HELPLINE_24_7}`} className="text-sm font-semibold text-gray-600 hover:text-[#8B5E3C]">
-                  Or call {HELPLINE_DISPLAY}
+                <a
+                  href={`tel:+${CONTACT.complaint.digits}`}
+                  className="text-sm font-semibold text-gray-600 hover:text-[#8B5E3C]"
+                >
+                  Or call Complaint desk {CONTACT.complaint.display}
                 </a>
               </div>
 
