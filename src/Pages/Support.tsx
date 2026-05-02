@@ -400,7 +400,7 @@ const Support = () => {
                 </a>
               </div>
 
-              <details className="group mt-8 rounded-2xl border border-dashed border-[#8B5E3C]/25 bg-[#FAF9F6] px-4 py-3 text-sm">
+              {/* <details className="group mt-8 rounded-2xl border border-dashed border-[#8B5E3C]/25 bg-[#FAF9F6] px-4 py-3 text-sm">
                 <summary className="cursor-pointer list-none font-medium text-[#8B5E3C] marker:content-none [&::-webkit-details-marker]:hidden">
                   <span className="underline-offset-2 group-open:underline">
                     What text is sent to WhatsApp? / મેસેજમાં શું જશે?
@@ -409,7 +409,7 @@ const Support = () => {
                 <pre className="mt-4 max-h-48 overflow-auto whitespace-pre-wrap break-words rounded-xl bg-[#2C2C2C] p-4 font-mono text-[10px] leading-relaxed text-[#f0ebe6] sm:text-xs">
                   {complaintMessage}
                 </pre>
-              </details>
+              </details> */}
             </div>
           </div>
         </section>
