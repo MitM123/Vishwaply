@@ -30,7 +30,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "1",
     src: newfalcon,
-    title: "New Falcon residence",
+    title: "Residencial",
     subtitle: "Minimalist interior · Variyav",
     category: "projects",
   },
